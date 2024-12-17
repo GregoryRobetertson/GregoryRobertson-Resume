@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Allow container to grow with window height */
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+header a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  border-bottom: 2px solid #0066cc;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Subheadings */
+h3 {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #0066cc;
+}
+
+.subheading {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+/* Lists */
+ul {
+  margin: 10px 0 10px 20px;
+  list-style: square;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Skills */
+.skills p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.skills strong {
+  color: #0066cc;
+}
+
+/* Location Styling */
+.location {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
